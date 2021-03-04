@@ -1,0 +1,15 @@
+.alert-success {
+  background: green;
+}
+
+.alert-info {
+  background: rgb(197, 234, 255);
+}
+
+.alert-warning {
+  background: rgb(255, 136, 0);
+}
+
+.alert-danger {
+  background: rgb(255, 7, 7);
+}
