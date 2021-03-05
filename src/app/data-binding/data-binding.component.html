@@ -14,7 +14,7 @@
     <img bind-src="urlImagen">
   </article> -->
 
-  <article>
+  <!-- <article>
     <h3>Class e style Binding</h3>
     <div>
       Selecione uma classe:
@@ -51,6 +51,73 @@
     [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
       Esse Texto somente aparece em caso de erro.
     </div>
+
+    </div>
+  </article>
+</section> -->
+
+<!-- <section class="event-bonding">
+
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+
+      <button (click)="botaoClicado"
+      class="btn btn-prymary">
+        Me Clique!
+    </button>
+
+    <br><br>
+
+    <input type="text"
+    (keyup)="onKeyUp($event)"
+    (keyup.enter)="salvarValor(campoInput.value)"
+    (blur)="salvarValor(campoInput.value)"
+    #campoInput>
+
+    <p>Valor atual:{{ valorAtual }}</p>
+    <p>Valor atual:{{ valorSalvo }}</p>
+
+    <br>
+    <span
+    (mouseover)="onMouseOverOut()"
+    (moudeout)="onMouseOverOut()"
+    [class.highlight]="isMouseOver">
+      Passe o mouse sobre mim
+    </span>
+
+    </div>
+  </article>
+
+</section> -->
+
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+
+      <input type="text"
+        [value]="nome"
+        (input)="nome = $event.target.value"
+      >
+
+      <input type="text"
+        [ngModel]="nome"
+        (ngModelChange)="nome = $event"
+      >
+
+      <input type="text" [(ngModel)]="nome">
+
+
+      <p>Você digitou: {{ nome }}</p>
+      <div>
+
+        <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade.</p>
+        <input type="text" [(ngModel)]="pessoa.nome">
+
+        <input type="text" [(ngModel)]="pessoa.idade">
+
+      </div>
 
     </div>
   </article>

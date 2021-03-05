@@ -1,15 +1,24 @@
 .alert-success {
   background: green;
+  font-weight: bold;
 }
 
 .alert-info {
   background: rgb(197, 234, 255);
+  font-weight: bold;
 }
 
 .alert-warning {
   background: rgb(255, 136, 0);
+  font-weight: bold;
 }
 
 .alert-danger {
   background: rgb(255, 7, 7);
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
 }
