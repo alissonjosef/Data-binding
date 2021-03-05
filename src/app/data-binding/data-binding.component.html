@@ -91,7 +91,7 @@
 
 </section> -->
 
-<section class="two-way-binding">
+<!-- <section class="two-way-binding">
   <article>
     <h3>Two-way data binding</h3>
     <div>
@@ -120,6 +120,21 @@
       </div>
 
     </div>
+  </article>
+
+</section> -->
+
+<section>
+
+  <article>
+    <h3>Input/Output Properties</h3>
+
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+
+    <contador [valor]="valorInicial"
+    (mudouValor)="onMudouValor($event)"
+    ></contador>
+
   </article>
 
 </section>
