@@ -9,7 +9,10 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { CicloComponent } from './ciclo/ciclo.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+<<<<<<< HEAD
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
+=======
+>>>>>>> ad94330900f9650cfc5f8248d493c75fbf32dddd
 
 @NgModule({
   declarations: [
@@ -18,8 +21,12 @@ import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch
     InputPropertyComponent,
     OutputPropertyComponent,
     CicloComponent,
+<<<<<<< HEAD
     DiretivaNgifComponent,
     DiretivaNgswitchComponent
+=======
+    DiretivaNgifComponent
+>>>>>>> ad94330900f9650cfc5f8248d493c75fbf32dddd
   ],
   imports: [
     BrowserModule,
